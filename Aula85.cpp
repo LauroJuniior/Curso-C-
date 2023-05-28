@@ -1,5 +1,5 @@
 #include <iostream>
-
+//esse  codigo  o usuario entra com um numero e  vai ver se esse nunmero e PAR ou IMPAR
 using namespace std;
 
 //prototipo da função
