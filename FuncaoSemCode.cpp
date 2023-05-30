@@ -9,8 +9,6 @@ void ProcessarEscolha(int TipoEscolha); //ira salvar a escolha do usuario em Tip
 int main()
 {
 	ExibirMenu();//chamando a função exibir Menu
-
-	system("PAUSE");
 	return 0;
 }
 
@@ -21,7 +19,7 @@ void ExibirMenu()
 
 	do // as instruções abaixo serão executadas pelo menos uma vez!
 	{
-		cout << "****Tickets Cinema****" << endl; 
+		cout << "\n****Tickets Cinema****" << endl; 
 		cout << "\n1 - Para Meia Entrada";
 		cout << "\n2 - Para Inteira";
 		cout << "\n3 - Sair";
@@ -31,8 +29,8 @@ void ExibirMenu()
 		//o que o usuario digitar em escolha ira ser salva na função ProcessarEscolha
 		ProcessarEscolha(escolha);
 	
-	}while (escolha == 3);
-		
+	}while (escolha > 3);
+
 }
 
 void ProcessarEscolha(int TipoEscolha)
@@ -49,6 +47,6 @@ void ProcessarEscolha(int TipoEscolha)
 			cout << "\nSaindo Menu Tickets...\n";
 			break;
 
-		default: cout << "\nOpção Inválida!!!\n";
+		default: cout << "\nOpcao Invalida!!!\n";
 	}
 }
